@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/modern-normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+NZ+Basic:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Seymour+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+NZ+Basic:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Seymour+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+    <header class="header">
+
+        <nav>
+            <ul class="nav-container">
+                <li class="nav-logo"><img src="./src/img/iceCream-logo.webp" alt="logo"></li>
+
+                <div class="nav-direction-div">
+                    <li class="nav-direction">Home</li>
+                    <li class="nav-direction">How it’s made?</li>
+                    <li class="nav-direction">Our products</li>
+                    <li class="nav-direction">Contact</li>
+                </div>
+
+                <div class="nav-btns-div">
+                    <li class="nav-element" data-modal-open-4><i class="bi bi-list"></i></li>
+                    <li><button class="nav-button" data-modal-open>Buy now <i class="bi bi-chevron-right"></i></button>
+                    </li>
+                </div>
+
+            </ul>
+        </nav>
+
+        <section class="hero-sect">
+            <div class="hero-info-div">
+                <div class="hero-prevew-div">
+                    <p>ice cream made with <span>passion</span></p>
+                    <div>
+                        <button class="hero-btn">Products</button>
+                        <a href="" class="hero-href">How it’s made?</a>
+                    </div>
+                </div>
+                <div class="hero-mediocre-div">
+                    <img src="./src/img/DifferensIceCreams.webp" alt="">
+                    <div>
+                        <p>Indulge in a scoop of ice cream made with passion and treat your taste buds to an
+                            unforgettable
+                            experience!</p>
+                        <i class="bi bi-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-img-div">
+                <picture>
+                    <source srcset="./src/img/MainIcecream-desktop.webp" media="(min-width: 1200px)">
+                    <source srcset="./src/img/MainIcecream-tablet.webp" media="(min-width: 768px)">
+                    <img src="./src/img/MainIcecream-mobile.webp" class="iceCream-img" alt="Ice Cream">
+                </picture>
+            </div>
+            <div class="hero-numbers-div">
+                <h1>16</h1>
+                <p>cafes</p>
+                <h1>23</h1>
+                <p>food trucks</p>
+            </div>
+        </section>
+
+    </header>
+    <main class="main">
+        <section class="product-section">
+            <div class="product-text">
+                <h2 style="text-transform: uppercase;">100% natural</h2>
+                <h1 style="text-transform: uppercase;">products</h1>
+            </div>
+            <div class="cards">
+                <div class="product-card">
+                    <div class="icecream-img">
+                        <img src="src/img/icecream-card.png" alt="">
+                    </div>
+                    <h3>ice cream</h3>
+                    <p>Soft ice cream with a delicate taste. Made with milk, cream, sugar and natural stabilizer</p>
+                    <img class="arrow" src="src/img/Arrow.png" alt="" data-modal-open-2>
+                </div>
+
+                <div class="product-card">
+                    <div class="coffee-img">
+                        <img src="src/img/coffee-card.png" alt="">
+                    </div>
+                    <h3>ice coffee</h3>
+                    <p>Fragrant invigorating drink created from 100% natural ingredients without the use of
+                        preservatives and flavor enhancers</p>
+                    <img class="arrow" src="src/img/Arrow.png" alt="" data-modal-open-6>
+                </div>
+
+                <div class="product-card">
+                    <div class="milkshakes-img">
+                        <img src="src/img/milkshakes-card.png" alt="">
+                    </div>
+                    <h3>milkshakes</h3>
+                    <p>Sweet drinks based on milk and ice cream, supplemented with syrups, fruits, berries and other
+                        sweets of your choice</p>
+                    <img class="arrow" src="src/img/Arrow.png" alt="" data-modal-open-5>
+                </div>
+            </div>
+        </section>
+
+        <section class="explain-div">
+            <div class="direction-explain">
+                <h2 class="explain-text">TRADITION AND LOVE</h2>
+                <h1 class="explain-h1">how it’s made?</h1>
+            </div>
+
+            <div class="explain-main-text-div">
+                <div class="explain-omega">
+                    <div class="image-exlain">
+                        <img class="explain-animal" src="src/img/BigCow.webp" alt="cow">
+                    </div>
+                    <div class="explain-dir">
+                        <div class="text-directions">
+                            <div class="lorem-expalin">
+                                <p>Ice is a place where you will become not only a little happier, but also healthier.
+                                    Health is the main value for us, and we follow it when creating our handmade
+                                    desserts. </p>
+                            </div>
+                            <div class="lorem-expalin">
+                                <p>We use traditional recipes and 100% natural ingredients.
+                                    Our products are so natural that they can be given to children from the age of three
+                                    years.
+                                    Sweets lovers can expect 55 types of ice cream, 15 types of coffee and 23
+                                    milkshakes.</p>
+                            </div>
+                            <div class="lorem-expalin">
+                                <p class="text-cow">This is enough to choose ice cream and coffee for any mood!</p>
+                            </div>
+                        </div>
+                        <div class="btn-direction">
+                            <button data-modal-open-3 class="button-explain">Read more <i
+                                    class="bi bi-caret-right-fill"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="image-colums">
+                <div class="width-colums">
+                    <div class="mini-direction">
+                        <img class="image-mini" src="src/img/MiniCow.webp" alt="minicow">
+                    </div>
+                    <p class="quantity">721</p>
+                    <div class="quantity-text">
+                        <br> Aliquam ac dui vel dui vulputate
+                        <br> consectetur. Mauris massa
+                    </div>
+                </div>
+                <div class="width-colums">
+                    <div class="mini-direction">
+                        <img class="image-mini" src="src/img/MiniWeight.webp" alt="weight">
+                    </div>
+                    <p class="quantity">16KG</p>
+                    <div class="quantity-text">
+                        <br> Aliquam ac dui vel dui vulputate
+                        <br> consectetur. Mauris massa
+                    </div>
+                </div>
+                <div class="width-colums">
+                    <div class="mini-direction">
+                        <img class="image-mini" src="src/img/MiniIcecream.webp" alt="ice">
+                    </div>
+                    <p class="quantity">84</p>
+                    <div class="quantity-text">
+                        <br> Aliquam ac dui vel dui vulputate
+                        <br> consectetur. Mauris massa
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="comment-sect">
+            <div class="surface-div">
+                <img src="./src/img/surface.webp" alt="" class="surface-img">
+            </div>
+
+            <div class="comment-div">
+                <div class="comment-img">
+                    <img src="./src/img/comment-first-img.webp" alt="">
+                </div>
+                <div class="comment-text-div">
+                    <p class="comment-text">I love visiting your cafe. You prepare the most delicious ice cream in
+                        Los
+                        Angeles! In addition,
+                        you have beautiful serving, cozy atmosphere and polite staff.</p>
+                </div>
+
+                <p class="locate-text">Emily, Los Angeles</p>
+                <div class="comment-circle">
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                    <i class="bi bi-circle-fill"></i>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="location-sect">
+
+            <div class="location-card-div">
+                <div class="location-card">
+
+                    <div class="location-name-div">
+                        <h1>CAFE</h1>
+                        <p>Chicago</p>
+                        <a href="">10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</a>
+                    </div>
+                    <div class="location-time-div">
+                        <h3>Monday - Friday</h3>
+                        <p>06:00 AM - 10:00 PM</p>
+                        <h3>Saturday - Sunday</h3>
+                        <p>08:00 AM - 16:00 PM</p>
+                    </div>
+                    <div class="location-info-div">
+                        <p>+61(0) 383 766 284</p>
+                        <p>noreply@envato.com</p>
+                    </div>
+
+                </div>
+
+                <div class="location-card">
+
+                    <div class="location-name-div">
+                        <h1>FOOD TRUCK</h1>
+                        <p>Los Angeles</p>
+                        <a href="">1003 Manhattan Ave, Manhattan Beach, CA 90263, USA</a>
+                    </div>
+                    <div class="location-time-div">
+                        <h3>Monday - Friday</h3>
+                        <p>06:00 AM - 10:00 PM</p>
+                        <h3>Saturday - Sunday</h3>
+                        <p>08:00 AM - 16:00 PM</p>
+                    </div>
+                    <div class="location-info-div">
+                        <p>+61(0) 383 766 284</p>
+                        <p>noreply@envato.com</p>
+                    </div>
+
+                </div>
+
+                <div class="location-card">
+
+                    <div class="location-name-div">
+                        <h1>CAFE</h1>
+                        <p>New York</p>
+                        <a>726 Sterling Pl, Brooklyn, NY 11222, USA</a>
+                    </div>
+                    <div class="location-time-div">
+                        <h3>Monday - Friday</h3>
+                        <p>06:00 AM - 10:00 PM</p>
+                        <h3>Saturday - Sunday</h3>
+                        <p>08:00 AM - 16:00 PM</p>
+                    </div>
+                    <div class="location-info-div">
+                        <p>+61(0) 383 766 284</p>
+                        <p>noreply@envato.com</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="location-btn-div">
+                <button class="location-first-btn">Our Locations <i class="bi bi-chevron-right"></i></button>
+                <button class="location-two-btn">Franchise <i class="bi bi-chevron-right"></i></button>
+            </div>
+            <div>
+                <div class="image-menu-direction">
+                    <img class="image-menu" src="/src/img/cafe.webp" alt="cafe">
+                </div>
+                
+                <div class="place-menu">
+                    <div>
+                        <div class="text-position">
+                            <p class="text-menu">Reserve a table</p>
+                        </div>
+                        <div class="lorem-position">
+                            <p class="lorem-menu">Treat yourself to handcrafted ice cream, signature milkshakes, and cozy moments in our café.</p>
+                        </div>
+                    
+                    </div>
+                    <div class="location-cafe">
+                        <button class="btn-cafe">Reserve <i class="bi bi-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+      <section class="footer-sect">
+        <div class="footer-preview-text-div">
+            <h2>Homemade Ice Cream<br class="footer-mobile-break"> Made</h2>
+            <h1>With<br class="footer-mobile-break"> Passion</h1>
+        </div>
+        <div class="footer-right-col">
+          <div class="footer-socials-div">
+            <a href="#" class="footer-social-icon" aria-label="GitHub">
+              <img src="src/img/github.webp" alt="GitHub">
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Telegram">
+              <img src="src/img/telegram.webp" alt="Telegram">
+            </a>
+            <a href="#" class="footer-social-icon" aria-label="Facebook">
+              <img src="src/img/facebook.webp" alt="Facebook">
+            </a>
+          </div>
+          <div class="footer-contact-div">
+            <p><strong>Feel free to contact</strong> +61 (0) 383 766 284</p>
+          </div>
+        </div>
+      </section>
+      <div class="footer-subtext-div">
+        <p>© 2022 - IceCream. <span class="footer-break">All Rights Reserved.</span></p>
+      </div>
+    </footer>
+
+    <div class="backdrop-products is-hidden" data-modal>
+        <div class="modal-products">
+            <button class="btn-close-products" data-modal-close><i class="bi bi-x"></i></button>
+            <h1>Buy now</h1>
+            <form>
+                <label>
+                    <div class="products-images">
+                        <div class="prewiew-products-icecream">
+                            <img src="./src/img/icecream-card.png" alt="">
+                            <div class="products-icecream-text-div">
+                                <p>ice cream</p>
+                            </div>
+                        </div>
+                        <div class="prewiew-products-coffee">
+                            <img src="./src/img/coffee-card.png" alt="">
+                            <div class="products-coffee-text-div">
+                                <p>ice coffee</p>
+                            </div>
+                        </div>
+                        <div class="prewiew-products-milkshakes">
+                            <img src="./src/img/milkshakes-card.png" alt="">
+                            <div class="products-milkshakes-text-div">
+                                <p>milkshake</p>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <input type="text" placeholder="Name" required class="name-input-products">
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <input type="tel" name="phone" pattern="^\+380\d{9}$" required placeholder="Phone"
+                            class="phone-input-products">
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <textarea name="comment" required placeholder="Comment"
+                            class="comment-input-products"></textarea>
+                    </div>
+                </label>
+                <div>
+                    <button type="submit" class="submit-modal">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="backdrop-ice-cream is-hidden" data-modal-2>
+        <div class="modal-ice-cream">
+            <button class="btn-close-ice-cream" data-modal-close-2><i class="bi bi-x"></i></button>
+            <h1>Chololate icecream</h1>
+            <form>
+                <label>
+                    <div class="ice-cream-head-img">
+                        <img src="./src/img/ice-cream-modal-img.webp" alt="">
+                    </div>
+                </label>
+                <label>
+                    <div class="ice-cream-composition-div">
+                        <div class="ice-cream-composition-card">
+                            <div class="ice-cream-composition-top-text">
+                                <p>320</p>
+                            </div>
+                            <h3>kcal</h3>
+                        </div>
+                        <div class="ice-cream-composition-card">
+                            <div class="ice-cream-composition-top-text">
+                                <p>4g</p>
+                            </div>
+                            <h3>Protein...</h3>
+                        </div>
+                        <div class="ice-cream-composition-card">
+                            <div class="ice-cream-composition-top-text">
+                                <p>8,2g</p>
+                            </div>
+                            <h3>Fats</h3>
+                        </div>
+                        <div class="ice-cream-composition-card">
+                            <div class="ice-cream-composition-top-text">
+                                <p>40,4g</p>
+                            </div>
+                            <h3>Carbs</h3>
+                        </div>
+                    </div>
+                </label>
+                <label>
+                    <div class="ice-cream-ingredients-div">
+                        <h1>Ingredients</h1>
+                        <div class="ice-cream-ingredients-text">
+                            <div class="ice-cream-ingredients-name">
+                                <p>Milk</p>
+                                <p>Belgian chocolate</p>
+                                <p>Cream</p>
+                                <p>Cocoa powder</p>
+                                <p>Sugar</p>
+                                <p>Vanilla sugar</p>
+                            </div>
+                            <div class="ice-cream-ingredients-kcal">
+                                <h3>100ml</h3>
+                                <h3>20g</h3>
+                                <h3>150 ml</h3>
+                                <h3>30g</h3>
+                                <h3>40g</h3>
+                                <h3>10g</h3>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <input type="text" placeholder="Name" required class="name-input-ice-cream">
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <input type="tel" name="phone" pattern="^\+380\d{9}$" required placeholder="Phone"
+                            class="phone-input-ice-cream">
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <textarea name="comment" required placeholder="Comment"
+                            class="comment-input-ice-cream"></textarea>
+                    </div>
+                </label>
+                <div>
+                    <button type="submit" class="submit-modal-ice-cream">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="backdrop-video is-hidden" data-modal-3>
+        <div class="modal-video">
+            <button class="btn-close-video" data-modal-close-3><i class="bi bi-x"></i></button>
+            <h1>How it’s made?</h1>
+            <form>
+                <label>
+                    <div class="video-div">
+                        <iframe width="224" height="199"
+                            src="https://www.youtube.com/embed/bDDazMFfW2g?si=xCHwXDvpe47Vy0Gm"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
+                    </div>
+                </label>
+                <label>
+                    <div class="video-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et</p>
+                    </div>
+                </label>
+            </form>
+        </div>
+    </div>
+
+    <div class="backdrop-menu is-hidden" data-modal-4>
+        <div class="modal-menu">
+            <div class="modal-nav-logo">
+                <img src="./src/img/iceCream-logo.webp" alt="logo">
+            </div>
+            <button data-modal-close-4 class="modal-close-button"><i class="bi bi-x"></i></button>
+            <nav class="modal-nav-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="modal-active">How it's made?</a></li>
+                    <li><a href="#">Our products</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="modal-button">Buy now<i class="bi bi-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <div class="backdrop-milkshake is-hidden" data-modal-5>
+        <div class="modal-milkshake">
+            <button class="btn-close-milkshake" data-modal-close-5><i class="bi bi-x"></i></button>
+            <h1>Milkshake</h1>
+            <form>
+                <label>
+                    <div class="milkshake-head-img">
+                        <img src="./src/img/milkshakes-card.png" alt="" width="120px">
+                    </div>
+                </label>
+                <label>
+                    <div class="milkshake-composition-div">
+                        <div class="milkshake-composition-card">
+                            <div class="milkshake-composition-top-text">
+                                <p>280</p>
+                            </div>
+                            <h3>kcal</h3>
+                        </div>
+                        <div class="milkshake-composition-card">
+                            <div class="milkshake-composition-top-text">
+                                <p>9g</p>
+                            </div>
+                            <h3>Protein...</h3>
+                        </div>
+                        <div class="milkshake-composition-card">
+                            <div class="milkshake-composition-top-text">
+                                <p>6g</p>
+                            </div>
+                            <h3>Fats</h3>
+                        </div>
+                        <div class="milkshake-composition-card">
+                            <div class="milkshake-composition-top-text">
+                                <p>38g</p>
+                            </div>
+                            <h3>Carbs</h3>
+                        </div>
+                    </div>
+                </label>
+                <label>
+                    <div class="milkshake-ingredients-div">
+                        <h1>Ingredients</h1>
+                        <div class="milkshake-ingredients-text">
+                            <div class="milkshake-ingredients-name">
+                                <p>Milk</p>
+                                <p>Ice Cream (flavor of your choice)</p>
+                                <p>Ice cubes</p>
+                                <p>Syrup (flavor of your choice)</p>
+                                <p>Fresh berries</p>
+                                <p>Whipped cream</p>
+                            </div>
+                            <div class="milkshake-ingredients-kcal">
+                                <h3>150ml</h3>
+                                <h3>140g</h3>
+                                <h3>30g</h3>
+                                <h3>10ml</h3>
+                                <h3>30g</h3>
+                                <h3>40g</h3>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <input type="text" placeholder="Name" required class="name-input-milkshake">
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <input type="tel" name="phone" pattern="^\+380\d{9}$" required placeholder="Phone"
+                            class="phone-input-milkshake">
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <textarea name="comment" required placeholder="Comment"
+                            class="comment-input-milkshake"></textarea>
+                    </div>
+                </label>
+                <div>
+                    <button type="submit" class="submit-modal-milkshake">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+        <div class="backdrop-ice-latte is-hidden" data-modal-6>
+        <div class="modal-ice-latte">
+            <button class="btn-close-ice-latte" data-modal-close-6><i class="bi bi-x"></i></button>
+            <h1>Ice latte</h1>
+            <form>
+                <label>
+                    <div class="ice-latte-head-img">
+                        <img src="./src/img/coffee-card.png" alt="" width="120px">
+                    </div>
+                </label>
+                <label>
+                    <div class="ice-latte-composition-div">
+                        <div class="ice-latte-composition-card">
+                            <div class="ice-latte-composition-top-text">
+                                <p>100</p>
+                            </div>
+                            <h3>kcal</h3>
+                        </div>
+                        <div class="ice-latte-composition-card">
+                            <div class="ice-latte-composition-top-text">
+                                <p>2g</p>
+                            </div>
+                            <h3>Protein...</h3>
+                        </div>
+                        <div class="ice-latte-composition-card">
+                            <div class="ice-latte-composition-top-text">
+                                <p>3g</p>
+                            </div>
+                            <h3>Fats</h3>
+                        </div>
+                        <div class="ice-latte-composition-card">
+                            <div class="ice-latte-composition-top-text">
+                                <p>18g</p>
+                            </div>
+                            <h3>Carbs</h3>
+                        </div>
+                    </div>
+                </label>
+                <label>
+                    <div class="ice-latte-ingredients-div">
+                        <h1>Ingredients</h1>
+                        <div class="ice-latte-ingredients-text">
+                            <div class="ice-latte-ingredients-name">
+                                <p>Milk</p>
+                                <p>Fresh brewed coffee</p>
+                                <p>Ice cubes</p>
+                                <p>Cane sugar</p>
+                                <p>Sugar</p>
+                                <p>Vanilla syrup</p>
+                            </div>
+                            <div class="ice-latte-ingredients-kcal"> 
+                                <h3>100ml</h3>
+                                <h3>150ml</h3>
+                                <h3>80g</h3>
+                                <h3>15g</h3>
+                                <h3>40g</h3>
+                                <h3>10ml</h3>
+                            </div>
+                        </div>
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <input type="text" placeholder="Name" required class="name-input-ice-latte">
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <input type="tel" name="phone" pattern="^\+380\d{9}$" required placeholder="Phone"
+                            class="phone-input-ice-latte">
+                    </div>
+                </label>
+                <label>
+                    <div>
+                        <textarea name="comment" required placeholder="Comment"
+                            class="comment-input-ice-latte"></textarea>
+                    </div>
+                </label>
+                <div>
+                    <button type="submit" class="submit-modal-ice-latte">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="modal.js"></script>
+</body>
+
+</html>

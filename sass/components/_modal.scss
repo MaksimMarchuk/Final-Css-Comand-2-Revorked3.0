@@ -1,0 +1,1459 @@
+.backdrop-products {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 300ms ease, visibility 300ms ease;
+}
+
+.backdrop-products.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal-products {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    height: 991px;
+    border: 2px solid $card-icecoffe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        font-family: Seymour One;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.btn-close-products {
+    border-style: none;
+    align-self: flex-end;
+    font-size: 30px;
+}
+
+.products-images {
+
+    .prewiew-products-icecream {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+
+        img {
+            width: 132px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .products-icecream-text-div {
+            width: 132px;
+            height: 136px;
+            border: 2px solid $card-icecream;
+            border-radius: 15px;
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 4%;
+            text-align: center;
+            text-transform: uppercase;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            position: relative;
+            bottom: 85px;
+            z-index: 1;
+        }
+    }
+
+    .prewiew-products-coffee {
+        position: relative;
+        bottom: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        img {
+            width: 132px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .products-coffee-text-div {
+            width: 132px;
+            height: 136px;
+            background-color: $card-icecoffe;
+            border-radius: 15px;
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 4%;
+            text-align: center;
+            text-transform: uppercase;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            position: relative;
+            bottom: 85px;
+            z-index: 1;
+        }
+    }
+
+    .prewiew-products-milkshakes {
+        position: relative;
+        bottom: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        img {
+            width: 132px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .products-milkshakes-text-div {
+            width: 132px;
+            height: 136px;
+            border: 2px solid $card-milkshakes;
+            border-radius: 15px;
+            font-family: Montserrat;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 100%;
+            letter-spacing: 4%;
+            text-align: center;
+            text-transform: uppercase;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            position: relative;
+            bottom: 85px;
+            z-index: 1;
+        }
+    }
+}
+
+.name-input-products {
+    position: relative;
+    bottom: 170px;
+    width: 214px;
+    padding: 5px;
+    border-style: none;
+    border: 1px solid $card-icecream;
+    border-radius: 10px;
+}
+
+.phone-input-products {
+    position: relative;
+    bottom: 160px;
+    width: 214px;
+    padding: 5px;
+    border-style: none;
+    border: 1px solid $card-icecream;
+    border-radius: 10px;
+}
+
+.comment-input-products {
+    position: relative;
+    bottom: 150px;
+    width: 214px;
+    height: 55;
+    padding: 5px;
+    border-style: none;
+    border: 1px solid $card-icecream;
+    border-radius: 10px;
+}
+
+.submit-modal {
+    position: relative;
+    bottom: 140px;
+    width: 114px;
+    height: 42px;
+    background-color: $card-icecoffe;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    border-style: none;
+    border-radius: 10px;
+}
+
+@media (min-width:768px) {
+
+    .modal-products {
+        width: 568px;
+        height: 644px;
+
+        h1 {
+            position: relative;
+            bottom: 20px;
+            font-family: Seymour One;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+        }
+    }
+
+    .products-images {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+
+        .prewiew-products-milkshakes {
+            position: relative;
+            bottom: 0px;
+        }
+
+        .prewiew-products-coffee {
+            position: relative;
+            bottom: 0px;
+        }
+
+        .prewiew-products-icecream {
+            margin-top: 0px;
+        }
+    }
+
+    .name-input-products {
+        position: relative;
+        bottom: 20px;
+        width: 368px;
+        height: 42px;
+    }
+
+    .phone-input-products {
+        position: relative;
+        bottom: 0px;
+        width: 368px;
+        height: 42px;
+    }
+
+    .comment-input-products {
+        position: relative;
+        bottom: 0px;
+        width: 368px;
+        height: 84px;
+        margin-top: 20px;
+    }
+
+    .submit-modal {
+        position: relative;
+        bottom: 0px;
+        margin-top: 10px;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.backdrop-ice-cream {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 300ms ease, visibility 300ms ease;
+}
+
+.backdrop-ice-cream.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal-ice-cream {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    height: 968px;
+    border: 2px solid $card-icecoffe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .btn-close-ice-cream {
+        border-style: none;
+        align-self: flex-end;
+        font-size: 30px;
+    }
+
+    h1 {
+        font-family: Seymour One;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .ice-cream-composition-div {
+            display: flex;
+
+            .ice-cream-composition-card {
+                margin-top: 20px;
+                width: 53px;
+                height: 72px;
+                border-radius: 40px;
+                border: 2px solid $sections-background;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                .ice-cream-composition-top-text {
+                    background-color: $sections-background;
+                    border-radius: 20px;
+                    width: 43px;
+                    height: 43px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    p {
+                        font-family: Montserrat;
+                        font-weight: 500;
+                        font-style: Medium;
+                        font-size: 10px;
+                        line-height: 28px;
+                        letter-spacing: 0%;
+                        text-align: center;
+                        vertical-align: middle;
+                        margin: 0;
+                    }
+                }
+
+                h3 {
+                    font-family: Montserrat;
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 10px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        .ice-cream-ingredients-div {
+            margin-top: 30px;
+
+            h1 {
+                font-family: Montserrat;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: 0%;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .ice-cream-ingredients-text {
+                display: flex;
+                gap: 40px;
+                justify-content: space-between;
+
+                .ice-cream-ingredients-name {
+                    font-family: Montserrat;
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 14px;
+                    line-height: 176%;
+                    letter-spacing: 4%;
+                    text-align: start;
+                    vertical-align: middle;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    p {
+                        margin: 0;
+                    }
+                }
+
+                .ice-cream-ingredients-kcal {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    h3 {
+                        font-family: Montserrat;
+                        font-weight: 400;
+                        font-style: Regular;
+                        font-size: 14px;
+                        line-height: 176%;
+                        letter-spacing: 4%;
+                        text-align: end;
+                        vertical-align: middle;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .name-input-ice-cream {
+            width: 230px;
+            height: 42px;
+            padding: 5px;
+            border-style: none;
+            border: 1px solid $card-icecream;
+            border-radius: 10px;
+            margin-top: 25px;
+        }
+
+        .phone-input-ice-cream {
+            width: 230px;
+            height: 42px;
+            padding: 5px;
+            border-style: none;
+            border: 1px solid $card-icecream;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .comment-input-ice-cream {
+            width: 230px;
+            height: 74px;
+            padding: 5px;
+            border-style: none;
+            border: 1px solid $card-icecream;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .submit-modal-ice-cream {
+            width: 132px;
+            height: 42px;
+            background-color: $accent-color;
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+            border-style: none;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .modal-ice-cream {
+        width: 586px;
+        height: 996px;
+
+        h1 {
+            font-family: Seymour One;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        form {
+
+            .ice-cream-composition-div {
+
+                .ice-cream-composition-card {
+                    width: 65px;
+                    height: 90px;
+
+                    .ice-cream-composition-top-text {
+                        width: 53px;
+                        height: 53px;
+                        border-radius: 30px;
+
+                        p {
+                            font-family: Montserrat;
+                            font-weight: 500;
+                            font-style: Medium;
+                            font-size: 12px;
+                            line-height: 28px;
+                            letter-spacing: 0%;
+                            text-align: center;
+                            vertical-align: middle;
+                        }
+                    }
+
+                    h3 {
+                        font-family: Montserrat;
+                        font-weight: 400;
+                        font-style: Regular;
+                        font-size: 12px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        text-align: center;
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            .ice-cream-ingredients-div {
+
+                h1 {
+                    font-family: Montserrat;
+                    font-weight: 500;
+                    font-style: Medium;
+                    font-size: 20px;
+                    line-height: 28px;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    vertical-align: middle;
+                }
+
+                .ice-cream-ingredients-text {
+                    gap: 300px;
+                }
+            }
+
+            .name-input-ice-cream {
+                width: 368px;
+                height: 42px;
+                margin-top: 50px;
+            }
+
+            .phone-input-ice-cream {
+                width: 368px;
+                height: 42px;
+            }
+
+            .comment-input-ice-cream {
+                width: 368px;
+                height: 84px;
+            }
+
+            .submit-modal-ice-cream {
+                width: 121px;
+                height: 42px;
+            }
+        }
+    }
+}
+
+.backdrop-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 300ms ease, visibility 300ms ease;
+}
+
+.backdrop-video.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal-video {
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    width: 280px;
+    height: 459px;
+    border: 2px solid $card-icecoffe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .btn-close-video {
+        height: 30px;
+        border-style: none;
+        align-self: flex-end;
+        font-size: 30px;
+    }
+
+    h1 {
+        font-family: Seymour One;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .video-div {
+            margin-top: 10px;
+        }
+
+        .video-text {
+            margin-top: 15px;
+
+            p {
+                margin: 0;
+                font-family: Montserrat;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 140%;
+                letter-spacing: 0%;
+                width: 224px;
+            }
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .modal-video {
+        width: 568px;
+        height: 449px;
+
+        h1 {
+            font-family: Seymour One;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        form {
+
+            .video-div {
+                margin-top: 20px;
+
+                iframe {
+                    width: 448px;
+                    height: 205px;
+                }
+            }
+
+            .video-text {
+                margin-top: 15px;
+
+                p {
+                    font-family: Montserrat;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 140%;
+                    letter-spacing: 0%;
+                    width: 448px;
+                }
+            }
+        }
+    }
+}
+
+.backdrop-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms ease, visibility 250ms ease;
+
+    &.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+.modal-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    background-color: $sections-background;
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .modal-nav-logo {
+        margin-right: 180px;
+    }
+
+    // крестик
+    .modal-close-button {
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .modal-nav-menu {
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        li {
+            margin-bottom: 20px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &:nth-child(2) {
+            color: $text-support;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+        }
+    }
+
+    .modal-button {
+        width: 170px;
+        padding: 10px;
+        background-color: #f8d24e;
+        border: none;
+        border-radius: 10px;
+        font-weight: 700;
+    }
+}
+
+@media (min-width:480px) {
+    .modal-menu {
+        padding: 100px 20px;
+    }
+
+    .modal-nav-logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    .modal-close-button {
+        top: 20px;
+        right: 20px;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .modal-button {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width:768px) {
+    .modal-menu {
+        width: 500px;
+        height: 600px;
+    }
+
+    .modal-button {
+        display: none;
+    }
+}
+
+.backdrop-milkshake {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 300ms ease, visibility 300ms ease;
+}
+
+.backdrop-milkshake.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal-milkshake {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    height: 968px;
+    transform: translateX(-20%);
+    border: 2px solid $card-icecoffe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .btn-close-milkshake {
+        border-style: none;
+        align-self: flex-end;
+        font-size: 30px;
+    }
+
+    h1 {
+        font-family: Seymour One;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .milkshake-composition-div {
+            display: flex;
+            gap: 7px;
+
+            .milkshake-composition-card {
+                margin-top: 20px;
+                width: 53px;
+                height: 72px;
+                border-radius: 40px;
+                border: 2px solid $highlighted-text;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                .milkshake-composition-top-text {
+                    background-color: $highlighted-text;
+                    border-radius: 20px;
+                    width: 43px;
+                    height: 43px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    p {
+                        font-family: Montserrat;
+                        font-weight: 500;
+                        font-style: Medium;
+                        font-size: 10px;
+                        line-height: 28px;
+                        letter-spacing: 0%;
+                        text-align: center;
+                        vertical-align: middle;
+                        margin: 0;
+                    }
+                }
+
+                h3 {
+                    font-family: Montserrat;
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 10px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        .milkshake-ingredients-div {
+            margin-top: 30px;
+
+            h1 {
+                font-family: Montserrat;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: 0%;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .milkshake-ingredients-text {
+                display: flex;
+                gap: 40px;
+                justify-content: space-between;
+
+                .milkshake-ingredients-name {
+                    font-family: Montserrat;
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 14px;
+                    line-height: 176%;
+                    letter-spacing: 4%;
+                    text-align: start;
+                    vertical-align: middle;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    p {
+                        margin: 0;
+                    }
+                }
+
+                .milkshake-ingredients-kcal {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    h3 {
+                        font-family: Montserrat;
+                        font-weight: 400;
+                        font-style: Regular;
+                        font-size: 14px;
+                        line-height: 176%;
+                        letter-spacing: 4%;
+                        text-align: end;
+                        vertical-align: middle;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .name-input-milkshake {
+            width: 230px;
+            height: 42px;
+            padding: 5px;
+            border-style: none;
+            border: 1px solid $card-icecream;
+            border-radius: 10px;
+            margin-top: 25px;
+        }
+
+        .phone-input-milkshake {
+            width: 230px;
+            height: 42px;
+            padding: 5px;
+            border-style: none;
+            border: 1px solid $card-icecream;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .comment-input-milkshake {
+            width: 230px;
+            height: 74px;
+            padding: 5px;
+            border-style: none;
+            border: 1px solid $card-icecream;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .submit-modal-milkshake {
+            width: 132px;
+            height: 42px;
+            background-color: $accent-color;
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+            border-style: none;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .modal-milkshake {
+        width: 586px;
+        height: 996px;
+        transform: translateX(-25%);
+
+        h1 {
+            font-family: Seymour One;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        form {
+
+            .milkshake-composition-div {
+                gap: 20px;
+
+                .milkshake-composition-card {
+                    width: 65px;
+                    height: 90px;
+
+                    .milkshake-composition-top-text {
+                        width: 53px;
+                        height: 53px;
+                        border-radius: 30px;
+
+                        p {
+                            font-family: Montserrat;
+                            font-weight: 500;
+                            font-style: Medium;
+                            font-size: 12px;
+                            line-height: 28px;
+                            letter-spacing: 0%;
+                            text-align: center;
+                            vertical-align: middle;
+                        }
+                    }
+
+                    h3 {
+                        font-family: Montserrat;
+                        font-weight: 400;
+                        font-style: Regular;
+                        font-size: 12px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        text-align: center;
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            .milkshake-ingredients-div {
+
+                h1 {
+                    font-family: Montserrat;
+                    font-weight: 500;
+                    font-style: Medium;
+                    font-size: 20px;
+                    line-height: 28px;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    vertical-align: middle;
+                }
+
+                .milkshake-ingredients-text {
+                    gap: 300px;
+                }
+            }
+
+            .name-input-milkshake {
+                width: 468px;
+                height: 42px;
+                margin-top: 50px;
+            }
+
+            .phone-input-milkshake {
+                width: 468px;
+                height: 42px;
+            }
+
+            .comment-input-milkshake {
+                width: 468px;
+                height: 84px;
+            }
+
+            .submit-modal-milkshake {
+                width: 121px;
+                height: 42px;
+            }
+        }
+    }
+}
+
+@media(min-width:1024px) {
+    .modal-milkshake {
+        transform: translateX(-1%);
+    }
+}
+
+.backdrop-ice-latte {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 300ms ease, visibility 300ms ease;
+}
+
+.backdrop-ice-latte.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal-ice-latte {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px;
+    height: 968px;
+    transform: translateX(-20%);
+    border: 2px solid $card-icecoffe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .btn-close-ice-latte {
+        border-style: none;
+        align-self: flex-end;
+        font-size: 30px;
+    }
+
+    h1 {
+        font-family: Seymour One;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 28px;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .ice-latte-composition-div {
+            display: flex;
+            gap: 7px;
+
+            .ice-latte-composition-card {
+                margin-top: 20px;
+                width: 53px;
+                height: 72px;
+                border-radius: 40px;
+                border: 2px solid $card-icecoffe;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+
+                .ice-latte-composition-top-text {
+                    background-color: $card-icecoffe;
+                    border-radius: 20px;
+                    width: 43px;
+                    height: 43px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    p {
+                        font-family: Montserrat;
+                        font-weight: 500;
+                        font-style: Medium;
+                        font-size: 10px;
+                        line-height: 28px;
+                        letter-spacing: 0%;
+                        text-align: center;
+                        vertical-align: middle;
+                        margin: 0;
+                    }
+                }
+
+                h3 {
+                    font-family: Montserrat;
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 10px;
+                    line-height: 100%;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    vertical-align: middle;
+                }
+            }
+        }
+
+        .ice-latte-ingredients-div {
+            margin-top: 30px;
+
+            h1 {
+                font-family: Montserrat;
+                font-weight: 500;
+                font-style: Medium;
+                font-size: 20px;
+                line-height: 28px;
+                letter-spacing: 0%;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            .ice-latte-ingredients-text {
+                display: flex;
+                gap: 40px;
+                justify-content: space-between;
+
+                .ice-latte-ingredients-name {
+                    font-family: Montserrat;
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 14px;
+                    line-height: 176%;
+                    letter-spacing: 4%;
+                    text-align: start;
+                    vertical-align: middle;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    p {
+                        margin: 0;
+                    }
+                }
+
+                .ice-latte-ingredients-kcal {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    h3 {
+                        font-family: Montserrat;
+                        font-weight: 400;
+                        font-style: Regular;
+                        font-size: 14px;
+                        line-height: 176%;
+                        letter-spacing: 4%;
+                        text-align: end;
+                        vertical-align: middle;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .name-input-ice-latte {
+            width: 230px;
+            height: 42px;
+            padding: 5px;
+            border-style: none;
+            border: 1px solid $card-icecream;
+            border-radius: 10px;
+            margin-top: 25px;
+        }
+
+        .phone-input-ice-latte {
+            width: 230px;
+            height: 42px;
+            padding: 5px;
+            border-style: none;
+            border: 1px solid $card-icecream;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .comment-input-ice-latte {
+            width: 230px;
+            height: 74px;
+            padding: 5px;
+            border-style: none;
+            border: 1px solid $card-icecream;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .submit-modal-ice-latte {
+            width: 132px;
+            height: 42px;
+            background-color: $accent-color;
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+            border-style: none;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media(min-width:768px) {
+    .modal-ice-latte {
+        width: 586px;
+        height: 996px;
+        transform: translateX(-25%);
+
+        h1 {
+            font-family: Seymour One;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0%;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        form {
+
+            .ice-latte-composition-div {
+                gap: 20px;
+
+                .ice-latte-composition-card {
+                    width: 65px;
+                    height: 90px;
+
+                    .ice-latte-composition-top-text {
+                        width: 53px;
+                        height: 53px;
+                        border-radius: 30px;
+
+                        p {
+                            font-family: Montserrat;
+                            font-weight: 500;
+                            font-style: Medium;
+                            font-size: 12px;
+                            line-height: 28px;
+                            letter-spacing: 0%;
+                            text-align: center;
+                            vertical-align: middle;
+                        }
+                    }
+
+                    h3 {
+                        font-family: Montserrat;
+                        font-weight: 400;
+                        font-style: Regular;
+                        font-size: 12px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        text-align: center;
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            .ice-latte-ingredients-div {
+
+                h1 {
+                    font-family: Montserrat;
+                    font-weight: 500;
+                    font-style: Medium;
+                    font-size: 20px;
+                    line-height: 28px;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    vertical-align: middle;
+                }
+
+                .ice-latte-ingredients-text {
+                    gap: 300px;
+                }
+            }
+
+            .name-input-ice-latte {
+                width: 468px;
+                height: 42px;
+                margin-top: 50px;
+            }
+
+            .phone-input-ice-latte {
+                width: 468px;
+                height: 42px;
+            }
+
+            .comment-input-ice-latte {
+                width: 468px;
+                height: 84px;
+            }
+
+            .submit-modal-ice-latte {
+                width: 121px;
+                height: 42px;
+            }
+        }
+    }
+}
+
+@media(min-width:1024px) {
+    .modal-ice-latte {
+        transform: translateX(-1%);
+    }
+}

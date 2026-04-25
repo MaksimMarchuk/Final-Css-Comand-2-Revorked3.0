@@ -1,0 +1,223 @@
+.bi-arrow-right:hover {
+    color: #fff;
+    text-shadow:
+        0 0 5px rgb(0, 253, 127),
+        0 0 10px rgb(0, 253, 127),
+        0 0 20px rgb(0, 253, 127),
+        0 0 40px rgb(0, 253, 127);
+    animation: neonFlicker 4s infinite;
+    animation-duration: 4s;
+
+    @keyframes neonFlicker {
+        from {
+            text-shadow:
+                0 0 10px rgb(81, 240, 147),
+                0 0 15x rgb(2, 129, 19);
+        }
+
+        to {
+            text-shadow:
+                0 0 20px rgb(45, 196, 90),
+                0 0 40px rgb(73, 189, 82),
+                0 0 80px rgb(26, 138, 4);
+        }
+    }
+}
+
+.header-button {
+
+    transition-duration: 0.8s;
+}
+
+.header-button:hover {
+    transform: scale(1.2);
+}
+
+.nav-button {
+    transition-duration: 0.5s;
+}
+
+.nav-button:hover {
+    transform: translateY(-10px);
+    background-color: #e6c13b;
+}
+
+.arrow {
+    transition-duration: 1.5s;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    transform: rotate(360deg);
+}
+
+.button-explain {
+    transition-duration: 0.5s;
+}
+
+.button-explain:hover {
+    transform: translateY(-10px);
+    background-color: #e6c13b;
+}
+
+.image-mini {
+    transition: 1500ms;
+    transition-duration: 0.5s;
+}
+
+.image-mini:hover {
+    transform: scale(1.2);
+}
+
+.bi-circle-fill {
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.bi-circle-fill:hover {
+    transform: translateY(-10px);
+}
+
+.bi-list {
+    transition: 1500ms;
+    transition-duration: 0.5s;
+}
+
+.bi-list:hover {
+    transform: scale(1.8);
+}
+
+.hero-btn {
+    transition: 1500ms;
+    transition-duration: 0.5s;
+}
+
+.hero-btn:hover {
+    transform: translateY(-10px);
+}
+
+.location-first-btn {
+    transition: 1500ms;
+    transition-duration: 0.7s;
+}
+
+.location-first-btn:hover {
+    transform: translateY(-10px);
+    color: $sections-background;
+}
+
+.location-two-btn {
+    transition-duration: 0.7s;
+}
+
+.location-two-btn:hover {
+    transform: translateY(-10px);
+    color: gray;
+}
+
+.submit-modal-ice-cream {
+    transition: 1500ms;
+    transition-duration: 1s;
+}
+
+.submit-modal-ice-cream:hover {
+    transform: translateY(-10px);
+}
+
+.submit-modal {
+    transition: 1500ms;
+    transition-duration: 1s;
+}
+
+.submit-modal:hover {
+    transform: translateY(-10px);
+}
+
+.btn-cafe {
+    transition: 1500ms;
+    transition-duration: 1s;
+}
+
+.btn-cafe:hover {
+    transform: scale(1.1);
+}
+
+.modal-nav-menu{
+
+    ul{
+        li{
+
+            a{
+                transition-duration: 0.4s;
+
+                &:hover{
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+.modal-close-button{
+    transition-duration: 0.7s;
+
+    &:hover{
+        transform: rotate(180deg);
+        color: gray;
+    }
+}
+
+.btn-close-products{
+    transition-duration: 0.7s;
+
+    &:hover{
+        transform: rotate(180deg);
+        color: gray;
+    }
+}
+
+.btn-close-ice-cream{
+    transition-duration: 0.7s;
+
+    &:hover{
+        transform: rotate(180deg);
+        color: gray;
+    }
+}
+
+.btn-close-video{
+    transition-duration: 0.7s;
+
+    &:hover{
+        transform: rotate(180deg);
+        color: gray;
+    }
+}
+
+.btn-close-milkshake{
+    transition-duration: 0.7s;
+
+    &:hover{
+        transform: rotate(180deg);
+        color: gray;
+    }
+}
+
+.btn-close-ice-latte{
+    transition-duration: 0.7s;
+
+    &:hover{
+        transform: rotate(180deg);
+        color: gray;
+    }
+}
+
+.btn-close-milkshake{
+    transition-duration: 0.7s;
+
+    &:hover{
+        transform: rotate(180deg);
+        color: gray;
+    }
+}
