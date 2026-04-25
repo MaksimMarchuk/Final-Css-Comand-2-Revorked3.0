@@ -1063,7 +1063,7 @@ body {
 }
 
 .lorem-menu {
-  font-size: 20px;
+  font-size: 16px;
   color: #FCFCFC;
   width: 264px;
 }
@@ -1126,12 +1126,18 @@ body {
   .location-cafe {
     display: flex;
     justify-content: start;
-    padding: 5px 0px 0px 20px;
+    padding: 0px 0px 0px 40px;
+  }
+  .container-menu {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 0px 0px 20px;
   }
 }
 @media (min-width: 768px) {
   .image-menu {
-    width: 624px;
+    width: 616px;
     height: 417px;
   }
   .text-menu {
@@ -1267,7 +1273,7 @@ body {
     flex-direction: row;
   }
   .location-cafe {
-    padding: 0px 0px 0px 400px;
+    padding: 0px 0px 0px 100px;
   }
   .text-menu {
     font-size: 40px;
