@@ -1,0 +1,217 @@
+.reg-body {
+    background-color: $sections-background;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
+    font-family: Montserrat;
+}
+
+.reg-header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 20px 40px;
+
+    @media (min-width: 1024px) {
+        justify-content: space-between; 
+    }
+
+    .logo img { 
+        width: 50px; }
+
+    .desktop-link {
+        display: none; 
+        color: white;
+        
+        @media (min-width: 1024px) { 
+            display: block; 
+        }
+
+        a { color: $accent-color; text-decoration: underline; font-weight: bold; }
+    }
+}
+
+
+.reg-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 2;
+
+    h1 {
+        color: white;
+        font-size: 32px;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: Seymour One;
+        @media (min-width: 768px) {
+             font-size: 40px; 
+            }
+    }
+}
+
+
+
+
+
+.reg-form {
+    width: 100%;
+    max-width: 405px; 
+    margin: 32px auto 0 auto; 
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 1024px) {
+        max-width: 671px; 
+        margin-top: 82px; 
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 100%; 
+
+        @media (min-width: 1024px) {
+            gap: 30px;
+        }
+        
+        .field {
+            display: flex;
+            flex-direction: column;
+            gap: 5px; 
+        }
+        
+        input {
+            height: 68px;
+        }
+
+   .error {
+    color: red;
+    font-size: 12px;
+    min-height: 14px; 
+  }
+
+
+        input {
+            width: 100%; 
+            height: 68px; 
+            background-color: $background-main;
+            border: none;
+            border-radius: 12px;
+            padding: 0 20px;
+            font-size: 18px;
+            outline: none;
+            box-sizing: border-box; 
+
+            @media (min-width: 1024px) {
+                height: 70px; 
+            }
+
+            &::placeholder { 
+                color: rgba(0,0,0,0.4); 
+            }
+        }
+    }
+}
+
+
+.checks {
+    margin: 70px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .check-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+
+        input { 
+            display: none; 
+        }
+        .box {
+            width: 18px;
+            height: 18px;
+            border: 2px solid $accent-color;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        input:checked + .box {
+            background-color: $accent-color;
+        }
+    }
+}
+
+
+.btn-submit {
+    width: 100%;
+    background-color: $accent-color;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+.mobile-link {
+    margin-top: 20px;
+    color: white;
+    @media (min-width: 1024px) { display: none; }
+    a { color: $accent-color; font-weight: bold; }
+}
+
+
+.bg-ice-cream {
+    position: absolute;
+    right: -20px;
+    bottom: -20px;
+    width: 250px;
+    z-index: 1;
+    pointer-events: none;
+
+    @media (min-width: 768px){
+         width: 350px; 
+    }
+    @media (min-width: 1024px) { 
+        width: 380px; 
+        right: 40px; 
+        bottom: 0; 
+        top: 200px; 
+    }
+}
+
+.bg-dots-1{
+    width: 380px;
+    position: absolute;
+    top: 200px;
+     @media (max-width: 480px) {
+    display: none;
+  }
+}
+
+.bg-dots-2{
+    width: 400px;
+    position: absolute;
+    top: 460px;
+    right: 0px;
+
+    @media (max-width: 480px) {
+    display: none;
+  }
+}

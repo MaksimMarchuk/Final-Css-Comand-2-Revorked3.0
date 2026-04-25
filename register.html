@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IceCream - Registration</title>
+    <link rel="stylesheet" href="./css/main.css">
+     <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+NZ+Basic:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Seymour+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+NZ+Basic:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&family=Seymour+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+</head>
+<body class="reg-body">
+    
+    <img class="bg-ice-cream" src="src/img/icecream.webp" alt="" >
+    <img class="bg-dots-1" src="src/img/bg-dots-1.webp" alt="">
+    <img class="bg-dots-2" src="src/img/bg-dots-2.webp" alt="">
+
+    <header class="reg-header">
+        <div class="logo">
+            <img src="src/img/iceCream-logo.webp" alt="Ice Logo">
+        </div>
+        <p class="desktop-link">Already have an account? <a href="login.html">Log in</a></p>
+    </header>
+
+    <main class="reg-container">
+        <h1>CREATE ACCOUNT</h1>
+
+        <form class="reg-form" id="reg-form">
+            <div class="inputs">
+                <div class="field">
+                <input type="text" id="name" placeholder="Name" required>
+                <p class="error" ></p>
+                </div>
+
+                <div class="field">
+                <input type="email" id="email" placeholder="E-mail" required>
+                <p class="error" id="emailError"></p>
+                </div>
+
+                <div class="field">
+                <input type="password" id="pass" placeholder="Password" required>
+                <p class="error" id="passwordError"></p>
+                </div>
+
+                <div class="field">
+                <input type="password" id="confirm-pass" placeholder="Confirm password" required>
+                <p class="error" id="confirmError"></p>
+                </div>
+            </div>
+
+            <div class="checks">
+                <label class="check-item">
+                    <input type="checkbox" id="policy" required>
+                    <span class="box"></span>
+                    I agree to the terms of use and privacy policy
+                </label>
+                <label class="check-item">
+                    <input type="checkbox" >
+                    <span class="box"></span>
+                    Receive promotions and news
+                </label>
+            </div>
+
+            <button type="submit" class="btn-submit" id="reg-btn">CONTINUE</button>
+        </form>
+
+        <p class="mobile-link">Already have an account? <a href="login.html">Log in</a></p>
+        
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
