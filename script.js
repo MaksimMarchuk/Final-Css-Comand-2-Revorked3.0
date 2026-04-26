@@ -64,6 +64,20 @@ policy.addEventListener("change", checkForm);
 
 
 
+showLogin.addEventListener("click", (e) => {
+    e.preventDefault(); 
+    registerForm.style.display = "none";
+    loginForm.style.display = "flex"; 
+});
+
+
+toRegLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    loginForm.style.display = "none";
+    registerForm.style.display = "flex";
+});
+
+
 
 
 

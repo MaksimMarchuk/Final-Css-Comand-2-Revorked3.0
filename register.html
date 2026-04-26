@@ -69,7 +69,36 @@
                 </label>
             </div>
 
-            <button type="submit" class="btn-submit" id="reg-btn">CONTINUE</button>
+
+            <form class="reg-form" id="login-form">
+                <div class="inputs">
+                    <div class="field">
+                    <input type="email" id="loginEmail" placeholder="E-mail" required>
+                    <p class="error" id="loginEmailError"></p>
+                </div>
+
+            <div class="field">
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <p class="error" id="loginPasswordError"></p>
+            </div>
+        </div>
+
+        <p id="forgot" >
+            Forgot password?
+        </p>
+
+        <div class="checks">
+            <label class="check-item">
+                <input type="checkbox" id="remember">
+                <span class="box"></span>
+                Remember me
+            </label>
+        </div>
+
+        <button type="submit" class="btn-submit" id="login-btn">LOGIN</button>
+    </form>
+
+            <!-- <button type="submit" class="btn-submit" id="reg-btn">CONTINUE</button> -->
         </form>
 
         <p class="mobile-link">Already have an account? <a href="login.html">Log in</a></p>
