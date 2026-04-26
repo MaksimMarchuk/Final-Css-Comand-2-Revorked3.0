@@ -163,6 +163,10 @@ body {
   display: none;
   cursor: pointer;
 }
+.header nav .nav-container .nav-direction a {
+  text-decoration: none;
+  color: inherit;
+}
 .header nav .nav-container .nav-button {
   display: none;
 }
@@ -3348,6 +3352,21 @@ body {
   }
 }
 
+#forgot {
+  cursor: pointer;
+  color: white;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.button-con {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
 
 .welcome-main {
   background-color: #84A178;
@@ -3578,21 +3597,4 @@ body {
   .welcome-main .welcome-info-main-div .info-card-div .welcome-input-div form .welcome-form-btn {
     width: 296px;
   }
-
-#forgot {
-  cursor: pointer;
-  color: white;
-  margin-top: 10px;
-}
-
-.hidden {
-  display: none !important;
-}
-
-.button-con {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-
-}
 }
