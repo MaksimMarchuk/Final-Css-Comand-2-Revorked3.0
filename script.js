@@ -34,17 +34,13 @@ function validatePassword() {
 
 
 function validateConfirm() {
-    const error = document.getElementById("confirmError");
+  const error = document.getElementById("confirmError");
 
-    if (password.value !== confirmPass.value) { 
-        error.textContent = "Passwords do not match";
-        return false;
-    }
-
-    error.textContent = "";
+  if (password.value !== confirmPass.value) {
+    error.textContent = "Passwords do not match";
     return true;
+  }
 }
-
 
 function checkForm() {
     const isValid =
@@ -83,6 +79,23 @@ toRegLink.addEventListener("click", (e) => {
 
 
 
+// const btn = document.getElementById("reg-continue-btn");
+// function checkForm() {
+//     const isValid =
+//         nameInput.value.trim() !== "" &&
+//         email.value.trim() !== "" &&
+//         password.value.length >= 8 &&
+//         confirmPass.value === password.value &&
+//         policy.checked;
+
+//     btn.disabled = !isValid;
+// }
+
+// nameInput.addEventListener("input", checkForm);
+// email.addEventListener("input", checkForm);
+// password.addEventListener("input", checkForm);
+// confirmPass.addEventListener("input", checkForm);
+// policy.addEventListener("change", checkForm);
 
 
 
