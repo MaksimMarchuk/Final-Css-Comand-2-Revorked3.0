@@ -1,0 +1,286 @@
+.welcome-main {
+    background-color: $sections-background;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .welcome-back{
+        position: absolute;
+        left: 20px;
+        top: 10px;
+        
+        i{
+            color: black;
+            font-size: 30px;
+        }
+    }
+
+    .welcome-main-text-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        gap: 20px;
+
+        h1 {
+            color: $base-text;
+            font-family: Seymour One;
+            font-size: 64px;
+            letter-spacing: 4%;
+        }
+
+        h3 {
+            color: $accent-color;
+            font-family: Seymour One;
+            font-size: 36px;
+            letter-spacing: 4%;
+        }
+    }
+
+    .welcome-img-div {
+        margin-top: 300px;
+        background-color: white;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 800px;
+        background-image: url(/src/img/welcome-bg.webp);
+
+        img {
+            position: relative;
+            bottom: 200px;
+            height: 1236px;
+        }
+    }
+
+    .welcome-info-main-div {
+        margin-top: 800px;
+        background-color: white;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 700px;
+        background-image: url(/src/img/welcome-bg.webp);
+
+        .info-card-div {
+            background-color: $sections-background;
+            width: 1246px;
+            height: 825px;
+            position: relative;
+            bottom: 300px;
+            box-shadow: 0 -10px 15px -5px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+
+            h3 {
+                color: $base-text;
+                font-family: Seymour One;
+                font-size: 36px;
+                letter-spacing: 4%;
+                margin-top: 100px;
+            }
+        }
+    }
+
+    .welcome-input-div {
+        display: flex;
+        justify-content: space-between;
+        width: 1000px;
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+
+            .date-label {
+                background-color: #ECE5C0;
+                padding: 15px;
+                border-radius: 13px;
+                display: flex;
+                align-items: center;
+                gap: 100px;
+
+                .date-input {
+                    border-style: none;
+                    background-color: #ECE5C0;
+                    font-family: Monserrat;
+                    font-weight: 600;
+                    color: $sections-background;
+                    outline-style: none;
+                    font-size: 24px;
+                }
+            }
+
+            .time-label {
+                background-color: #ECE5C0;
+                padding: 15px;
+                border-radius: 13px;
+                display: flex;
+                align-items: center;
+                gap: 100px;
+
+                .time-input {
+                    border-style: none;
+                    background-color: #ECE5C0;
+                    font-family: Monserrat;
+                    font-weight: 600;
+                    color: $sections-background;
+                    outline-style: none;
+                    font-size: 24px;
+                }
+            }
+
+            .table-label {
+                background-color: #ECE5C0;
+                padding: 15px;
+                border-radius: 13px;
+                display: flex;
+                align-items: center;
+                gap: 100px;
+
+                .table-input {
+                    border-style: none;
+                    background-color: #ECE5C0;
+                    font-family: Monserrat;
+                    font-weight: 600;
+                    color: $sections-background;
+                    outline-style: none;
+                    font-size: 24px;
+                }
+            }
+
+            .welcome-form-btn {
+                width: 356px;
+                height: 72px;
+                border-radius: 13px;
+                border-style: none;
+                outline-style: none;
+                background-color: #F8D24E;
+                font-family: Monserrat;
+                font-weight: 600;
+                color: $base-text;
+                outline-style: none;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+
+    .welcome-main {
+
+        .welcome-main-text-div {
+
+            h3 {
+                width: 531px;
+                text-align: center;
+            }
+        }
+
+        .welcome-img-div {
+            height: 450px;
+
+            img {
+                height: 634px;
+                bottom: 80px;
+            }
+        }
+
+        .welcome-info-main-div {
+            height: 400px;
+            margin-top: 600px;
+
+            .info-card-div {
+                width: 671px;
+                height: 670px;
+                justify-content: start;
+
+                .welcome-input-div {
+                    justify-content: center;
+                    margin-top: 100px;
+
+                    .welcome-img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:480px){
+
+    .welcome-main {
+
+        .welcome-main-text-div {
+
+            img{
+                width: 78px;
+                height: 88px;
+            }
+
+            h1{
+                font-size: 36px;
+            }
+
+            h3 {
+                font-size: 16px;
+                width: 303px;
+            }
+        }
+
+        .welcome-img-div {
+            height: 300px;
+
+            img {
+                height: 418px;
+                bottom: 60px;
+            }
+        }
+
+        .welcome-info-main-div {
+            height: 400px;
+            margin-top: 600px;
+
+            .info-card-div {
+                width: 353px;
+                height: 549px;
+
+                h3{
+                    width: 391px;
+                    text-align: center;
+                    margin-top: 20px;
+                    font-size: 24px;
+                }
+
+                .welcome-input-div {
+                    justify-content: center;
+                    margin-top: 50px;
+
+                    form{
+
+                        .date-label{
+                            gap: 40px;
+                        }
+
+                        .time-label{
+                            gap: 40px;
+                        }
+
+                        .table-label{
+                            gap: 40px;
+                        }
+
+                        .welcome-form-btn{
+                            width: 296px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
