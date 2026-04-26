@@ -505,6 +505,10 @@
                 color: $highlighted-text;
                 width: 190px;
                 margin-top: 10px;
+
+                &:hover{
+                    text-decoration: underline;
+                }
             }
         }
 

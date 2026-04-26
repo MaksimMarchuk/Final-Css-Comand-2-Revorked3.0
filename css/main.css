@@ -956,6 +956,9 @@ body {
   width: 190px;
   margin-top: 10px;
 }
+.location-sect .location-card .location-name-div a:hover {
+  text-decoration: underline;
+}
 .location-sect .location-card .location-time-div {
   margin-top: 40px;
 }
