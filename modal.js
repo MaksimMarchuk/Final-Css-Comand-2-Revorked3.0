@@ -93,3 +93,39 @@
         document.body.classList.toggle("no-scroll");
     }
 })();
+
+(() => {
+    const openModalBtn = document.querySelector("[data-modal-open-location]");
+    const closeBtns = document.querySelectorAll("[data-modal-close-location]");
+    const modal = document.querySelector("[data-modal-location]");
+
+    openModalBtn.addEventListener("click", () => {
+        modal.classList.toggle("is-hidden");
+        document.body.classList.toggle("no-scroll");
+    });
+
+    closeBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            modal.classList.toggle("is-hidden");
+            document.body.classList.toggle("no-scroll");
+        });
+    });
+})();
+
+(() => {
+    const openModalBtn = document.querySelector("[data-modal-open-franchise]");
+    const closeBtns = document.querySelectorAll("[data-modal-close-franchise]");
+    const modal = document.querySelector("[data-modal-franchise]");
+
+    openModalBtn.addEventListener("click", () => {
+        modal.classList.toggle("is-hidden");
+        document.body.classList.toggle("no-scroll");
+    });
+
+    closeBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            modal.classList.toggle("is-hidden");
+            document.body.classList.toggle("no-scroll");
+        });
+    });
+})();
