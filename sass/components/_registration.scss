@@ -229,7 +229,11 @@
 
 
 .button-con{
-    text-decoration: none; 
-    color: inherit;        
-    cursor: pointer;       
+    text-decoration: none;        
+    cursor: pointer;   
+    color: white;  
+    
+    &:hover{
+        color: white;
+    }
 }
