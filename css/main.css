@@ -163,6 +163,10 @@ body {
   display: none;
   cursor: pointer;
 }
+.header nav .nav-container .nav-direction a {
+  text-decoration: none;
+  color: inherit;
+}
 .header nav .nav-container .nav-button {
   display: none;
 }
@@ -2789,7 +2793,7 @@ body {
   padding: 60px 20px;
   text-align: center;
   background-color: #FCFCFC;
-  background-image: url("/src/img/backgroung-icecream.png");
+  background-image: url("/src/img/backgroung-icecream.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -3360,11 +3364,16 @@ body {
 
 .button-con {
   text-decoration: none;
+
   cursor: pointer;
   color: white;
 }
 .button-con:hover {
   color: white;
+
+  color: inherit;
+  cursor: pointer;
+
 }
 
 .welcome-main {
